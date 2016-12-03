@@ -1,0 +1,101 @@
+.totvs-list {
+width: inherit;
+padding-left: 0px;
+margin-bottom: 0;
+   
+}
+
+.totvs-list .active {
+    background-color: #ea9b3e;
+    color: white;
+}
+
+.totvs-list .totvs-list-item {
+    list-style-type: none;
+    box-shadow: inset 0px 1px 0 0 #e4e7e7, inset 0px -1px 0 0 #e4e7e7;
+    padding: 18px;
+}
+
+.totvs-list .totvs-list-item.icon {
+    display: table;
+    width: 100%;
+}
+
+
+.totvs-list .totvs-list-item .totvs-list-item-icon {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-photo {
+    width: 40px;
+    float: right;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-label {
+    font-size: 14px;
+    text-align: left;
+    color: rgba(74, 92, 96, 0.75);
+}
+
+.totvs-list .totvs-list-item.link {
+    font-size: 16px;
+    color: #0c9abe;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value {
+    font-size: 16px;
+    text-align: left;
+    color: #0c9abe;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled {
+    color:  #a4adaf;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > input,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > textarea {
+    color:  #a4adaf;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > input::-webkit-input-placeholder,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > textarea::-webkit-input-placeholder,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > input:-ms-input-placeholder,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > textarea:-ms-input-placeholder,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > input::-moz-placeholder,
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled > textarea::-moz-placeholder {
+    color:  #a4adaf;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value.disabled .totvs-list-item-icon {
+    color:  #a4adaf;
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value.has-icon > input,
+.totvs-list .totvs-list-item .totvs-list-item-value.has-icon > textarea {
+    width: -o-calc(100% - 30px); /* opera */
+    width: -webkit-calc(100% - 30px); /* google, safari */
+    width: -moz-calc(100% - 30px); /* firefox */
+    width: calc(100% - 30px);
+}
+
+.totvs-list .totvs-list-item .totvs-list-item-value .totvs-list-item-icon {
+    font-size: 22px;
+    width:25px;
+    text-align: left;
+    color: #0c9abe;
+    float:right;
+}
+
+.totvs-list .totvs-list-divider {
+    background-color: #edefef;
+    box-shadow: inset 0px 1px 0 0 #e4e7e7, inset 0px -1px 0 0 #e4e7e7;
+    font-size: 14px;
+    color: rgba(74, 92, 96, 0.75);
+    padding: 18px;
+}
+
+.totvs-list .totvs-list-divider span {
+    opacity: 0.75;
+}

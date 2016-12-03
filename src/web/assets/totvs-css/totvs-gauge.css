@@ -1,0 +1,23 @@
+#gauge-container {
+    text-align: center;
+    margin-left: 35px;
+    background: transparent url("../../linear-gauge-container-h.png") no-repeat 50% 50%;
+    background-size: 290;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+#gauge-container-horizontal {
+    background: transparent url("../../linear-gauge-container-h.png") no-repeat 50% 50%;
+
+    align-content: center;
+}
+
+#gauge {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto 0;
+    background-size: 290px;
+}

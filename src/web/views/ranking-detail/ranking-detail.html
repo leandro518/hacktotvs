@@ -1,0 +1,27 @@
+<div
+    class="container totvs-content"
+    ng-class="controller.anim"
+    ui-view="tasks.ranking"
+    ng-controller="RankingController as controller">
+
+    <ul class="totvs-list" style="margin-top:0px">
+        <div >
+          <table class="table table-striped" >
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>{{'l-Nome'  | translate }}</th>
+                <th>{{'l-Total_Venda'  | translate }}</th>
+            </tr>
+           </thead>
+           <tbody>
+              <tr ng-repeat="ranking in controller.ranking">
+                <td>{{ranking.pos}}</td>
+                <td>{{ranking.nome}}</td>
+                <td>{{ranking.comis | currency:'R$ '}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </ul>
+</div>

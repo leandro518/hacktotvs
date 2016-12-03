@@ -1,0 +1,32 @@
+.totvs-notification {
+    box-shadow: 0px 2px 4px 0 rgba(74, 92, 96, 0.3);
+    background-color: #4a5c60;
+    padding: 12px 15px 12px 15px;
+    color: white;
+    font-size: 12px;
+}
+
+.totvs-notification-modal {
+    margin-top: 50px;
+    bottom: auto!important;
+}
+
+.totvs-notification-modal .modal-dialog .modal-content {
+    border-radius: 3px;
+}
+
+.totvs-notification.is-success {
+    box-shadow: 0px 2px 4px 0 rgba(74, 92, 96, 0.3);
+    background-color: #29b6c5;
+}
+
+.totvs-notification.is-error {
+    box-shadow: 0px 2px 4px 0 rgba(198, 72, 64, 0.3);
+    background-color: #c64840;
+}
+
+.totvs-notification.is-warning {
+    /* TODO: não existe warning no style guide. A cor deve ser alterada pois coloquei uma que não é a correta */
+    box-shadow: 0px 2px 4px 0 rgba(234, 155, 62, 0.3);
+    background-color: #ea9b3e;
+}

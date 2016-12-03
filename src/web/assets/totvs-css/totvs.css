@@ -1,0 +1,58 @@
+.totvs {
+    background-color: #FFFFFF;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.totvs .totvs-container {
+    padding: 50px 0px 10px 0px;
+    width: 100%;
+}
+
+.totvs .totvs-content {
+    padding: 0px;
+    width: 100%;
+    position: initial!important;
+}
+
+.totvs .totvs-content-padding {
+    padding: 10px;
+}
+
+.totvs .big-text {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.totvs .small-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.totvs .smallest-text {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.img-arredondada {
+       background-position: center;
+       border-radius: 50%;
+       height: 70px;
+       width: 70px;
+       background-size: 100px;
+       margin-top: 10px;
+       margin-left: 20px;
+       margin-right: 20px;
+       margin-bottom: 10px;
+      }
+
+.nome{
+      vertical-align: middle;
+
+}
+
+.totvs .margem-text{
+      margin-top: 5px;
+       margin-left: 20px;
+}

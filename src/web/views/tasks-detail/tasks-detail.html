@@ -1,0 +1,39 @@
+<div
+    class="container totvs-content"
+    ng-class="controller.anim"
+    ui-view="tasks.detail"
+    ng-controller="TaskDetailController as controller">
+
+    <ul class="totvs-list" style="margin-top:0px">
+        <li class="totvs-list-divider">
+          <h4>
+              <b> {{"l-Total_Venda" | translate}} : </b> {{controller.totalVenda | currency:'R$'}}
+              <br>
+              <b>{{"l-Total_Comissao" | translate}} : </b> {{controller.totalComis  | currency:'R$'}}
+          </h4>
+        </li>
+    </ul>
+
+    <ul class="totvs-list" style="margin-top:0px">
+        <div >
+          <table class="table table-striped" >
+            <thead>
+            <tr>
+                <th>{{"l-Data" | translate}}</th>
+                <th>{{"l-Hora" | translate}}</th>
+                <th>{{"l-Valor" | translate}}</th>
+                <th>{{"l-Comissao" | translate}}</th>
+            </tr>
+           </thead>
+           <tbody>
+              <tr ng-repeat="venda in controller.vendas">
+                <td>{{venda.data}}</td>
+                <td>{{venda.hora}}</td>
+                <td>{{venda.valor | currency:'R$'}}</td>
+                <td>{{venda.comis | currency:'R$'}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </ul>
+</div>

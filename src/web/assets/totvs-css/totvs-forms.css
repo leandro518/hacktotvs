@@ -1,0 +1,179 @@
+.totvs-login-form {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    border: 1px solid #e4e7e7;
+    border-radius: 3px;
+}
+
+.totvs-login-form > .totvs-input {
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+    height: 38px;
+}
+
+.totvs-login-form > .totvs-btn {
+    margin: 10% 10% 10% 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.totvs-input {
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+.totvs-input::-webkit-input-placeholder {
+   color: #0c9abe;
+}
+.totvs-input:-ms-input-placeholder {
+   color: #0c9abe;
+}
+.totvs-input::-moz-placeholder {
+   color: #0c9abe;
+}
+
+.totvs-input.disabled::-webkit-input-placeholder {
+   color: #a4adaf;
+}
+.totvs-input.disabled:-ms-input-placeholder {
+   color: #a4adaf;
+}
+.totvs-input.disabled::-moz-placeholder {
+   color: #a4adaf;
+}
+
+.totvs-input[type=text]:focus,
+.totvs-input[type=password]:focus {
+    border-bottom: 1px solid #ea9b3e;
+    outline: none;
+}
+
+.totvs-input[type=text].disabled:focus,
+.totvs-input[type=password].disabled:focus {
+    border-bottom: 0px;
+    outline: none;
+}
+
+.totvs-input.has-error {
+    border-bottom: solid 2px #c64840;
+}
+
+.totvs-input-error {
+    color: #c64840;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.totvs-input-group {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    border: 1px solid #e4e7e7;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.totvs-input-group.float-label {
+    position: relative;
+}
+
+.float-label-anim {
+    position: absolute;
+    color: rgba(74, 92, 96, 0.75);
+    top: 10px;
+    left: 20px;
+    font-size: 14px;
+}
+
+.float-label-anim:ng-hide {
+    position: absolute;
+    top: 30px;
+}
+
+
+.float-label-anim.ng-hide-remove,
+.float-label-anim.ng-hide-add {
+    transition: all linear 0.2s;
+    display: block!important;
+    position: absolute;
+}
+
+.float-label-anim.ng-hide-add.ng-hide-add-active,
+.float-label-anim.ng-hide-remove {
+    top: 30px;
+    display: block!important;
+    position: absolute;
+    opacity: 0;
+    color: #0c9abe;
+}
+
+.float-label-anim.ng-hide-add,
+.float-label-anim.ng-hide-remove.ng-hide-remove-active {
+    top: 10px;
+    opacity: 1;
+    display: block!important;
+    position: absolute;
+    color: rgba(74, 92, 96, 0.75);
+}
+
+.totvs-input-group.float-label .totvs-input {
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+.totvs-input-group > input[type=text]:focus,
+.totvs-input-group > input[type=password]:focus,
+.totvs-input-group > input[type=date]:focus {
+    border-bottom: 1px solid #0c9abe;
+    outline: none;
+}
+
+.totvs-input-group > input::-webkit-input-placeholder,
+.totvs-input-group > input:-ms-input-placeholder,
+.totvs-input-group > input::-moz-placeholder,
+.totvs-input-group > input:-moz-placeholder {
+   color: #0c9abe;
+}
+
+.totvs-input-group-icon {
+    position: absolute;
+    font-size: 18px;
+    right: 15px;
+    top: 30px;
+}
+
+
+ .totvs-select{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width:100%;
+   padding: 0px;
+   background: url(../img/icon-menu-down.png);
+   background-repeat: no-repeat;
+   background-position: center right 0px;
+   font-family: Arial;
+   font-size: 16px;
+   text-align: left;
+   border: 0px solid #ffffff;
+   color: #0c9abe
+}
+
+.totvs-select:focus {
+    border-bottom: 1px solid #ea9b3e;
+    outline: none;
+}
+
+ .totvs-select.pop-up {
+   padding: 19px;
+  }
+
+.totvs-textarea{
+    width:100%;
+    padding-left: 0px;
+    border: none;
+    resize: none;
+}

@@ -1,0 +1,96 @@
+<div
+    class="container totvs-content anim-slide-below-fade"
+    ng-controller="TasksController as controller">
+
+    <div class="nome" >
+       <table>
+         <td>
+           <div class="img-arredondada"
+             style="background-image: url(./sem.jpg)"
+             ng-click="controller.scan()">
+           </div>
+         </td>
+         <td>
+           <div class="nome" >
+               <b>{{controller.nome}}</b><br>
+               <b>{{"l-Matricula" | translate}}:</b> 2000301
+           </div>
+         </td>
+       </table>
+    </div>
+
+    <!--../imagens/sem.jpg
+    {{ controller.picture }}-->
+    <div class="navbar-totvs" align='center'>
+        {{"l-Posicao_vendedor" | translate}}
+    </div>
+
+    <ul class="totvs-list">
+      <li class="totvs-list-item icon selectable">
+        <span class="totvs margem-text">
+          <b>{{"l-Comissao" | translate}}</b><br>
+        </span>
+        <span class="totvs margem-text">
+          <b>{{ "l-Tot_Venda_Dia"| translate }}</b>
+          <font color="#0c9abe"> {{controller.totComis | currency:'R$ '}}</font> |
+          <b>{{ "l-Tot_Comis_Dia"| translate }}</b>
+          <font color="#0c9abe">{{controller.comisMes | currency:'R$ '}}</font>
+        </span>
+      </li>
+
+      <li class="totvs-list-item icon selectable"  ng-click="controller.openSales(controller.id, controller.vendaMes, controller.comisMes )" >
+        <span class="totvs margem-text">
+          <b>{{"l-Vendas" | translate}}</b>
+        </span>
+        <br>
+        <span class="totvs margem-text">
+            <b>{{"l-Dia" | translate}}:</b>
+            <font color="#0c9abe">{{ controller.totVenda | currency:'R$ ' }}   </Font>|
+            <b>{{"l-Mes" | translate}}:</b>
+              <font color="#0c9abe"> {{controller.vendaMes | currency:'R$ '}} </font>
+          </font>
+        </span>
+        <span class="totvs-list-item-icon">
+          <figure>
+            <img src="./assets/img/icon-menu-right.png" align='right'>
+          </figure>
+        </span>
+      </li>
+
+      <!-- Posição Ranking -->
+      <li class="totvs-list-item icon selectable"  ng-click="controller.openRanking(controller.id )" >
+        <span class="totvs margem-text">
+          <b>{{"l-Posição_Ranking" | translate}}</b>
+        </span>
+        <br>
+        <span class="totvs margem-text">
+          <font color="#0c9abe">
+            <b>#</b>{{ controller.rank}}
+          </font>
+        </span>
+        <span class="totvs-list-item-icon">
+          <figure>
+            <img src="./assets/img/icon-menu-right.png" align='right'>
+          </figure>
+        </span>
+      </li>
+    </ul>
+
+    <!-- Indicador (termometro) de meta -->
+    <div id="gauge-container">
+      <h4><b> {{"l-Indicador_diario" | translate}}<b></h4>
+      <div id="gauge" kendo-lineargauge
+            k-scale="controller.scaleDia"
+            ng-model="controller.venddia">
+        </div>
+    </div>
+
+   <div id="gauge-container">
+     <h4><b> {{"l-Indicador_mensal" | translate}}<b></h4>
+     <div id="gauge" kendo-lineargauge
+           k-scale="controller.scaleMes"
+           ng-model="controller.venddia">
+       </div>
+   </div>
+
+</div>

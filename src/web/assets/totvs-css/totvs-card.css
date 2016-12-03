@@ -1,0 +1,52 @@
+.totvs-card {
+    background-color: white;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4a5c60;
+
+    margin: 0px 10px 0px 10px;
+    width: inherit;
+
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px 1px rgba(74, 92, 96, 0.3);
+}
+
+.totvs-card .card-destaque {
+    background-color: #29b6c5;
+}
+
+.totvs-card .card-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c9abe;
+    padding: 15px 20px 15px 20px;
+    border-bottom: solid 1px #e4e7e7;
+}
+
+.totvs-card .card-body {
+    color: #4a5c60;
+    padding: 15px 20px 15px 20px;
+
+}
+
+.totvs-card .card-footer {
+    font-size: 18px;
+    color: #0c9abe;
+    padding: 15px 20px 15px 20px;
+    border-top: solid 1px #e4e7e7;
+}
+
+.totvs-card .card-body .card-body-icon-line {
+    margin-top: 10px;
+    position: relative;
+}
+
+.totvs-card .card-body .card-body-icon-line .card-line-icon {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+
+.totvs-card .card-body .card-body-icon-line .card-line-text {
+    margin-left:2em;
+}

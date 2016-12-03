@@ -1,0 +1,17 @@
+.totvs-list-form {
+    margin-top: 10px;
+    width: inherit;
+}
+
+::-webkit-input-placeholder {
+   color: #a4adaf;
+}
+:-ms-input-placeholder {
+   color: #a4adaf;
+}
+::-moz-placeholder {
+   color: #a4adaf;
+}
+:-moz-placeholder {
+   color: #a4adaf;
+}

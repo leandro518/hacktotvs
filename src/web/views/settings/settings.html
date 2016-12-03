@@ -1,0 +1,27 @@
+
+<div
+    class="container totvs-content anim-slide-below-fade"
+    ng-controller="SettingsController as controller">
+
+  <ul class="totvs-list">
+    <li class="totvs-list-item" ng-repeat="msg in controller.msg">
+        <span class="medium-text"  align='center'>
+          {{"l-de" | translate}}: {{msg.de}}
+          <br>
+          {{"l-Data" | translate}}: {{msg.data}}
+        </span>
+        <br>
+        <span class="small-text">
+            <font color="#0c9abe" align='center'>
+              {{msg.msg}}
+            </font>
+        </span>
+
+        <span class="totvs-list-item-icon">
+            <figure>
+                <img src="./assets/img/icon-menu-down.png" align='center'>
+            </figure>
+        </span>
+    </li>
+  </ul>
+</div>

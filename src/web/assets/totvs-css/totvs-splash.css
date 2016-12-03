@@ -1,0 +1,70 @@
+.totvs-splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.totvs-splash .totvs-splash-logo {
+    width: 70%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.totvs-splash img {
+    width: 100%;
+}
+
+.totvs-splash .totvs-splash-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-animation: fadeAppear 500ms ease forwards;
+    -o-animation: fadeAppear 500ms ease forwards;
+    animation: fadeAppear 500ms ease forwards;
+    animation-iteration-count: 1;
+
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeAppear {to {opacity: 1;}}
+@-o-keyframes fadeAppear {to {opacity: 1;}}
+@keyframes fadeAppear {to {opacity: 1;}}
+
+
+.totvs-splash .totvs-splash-form .totvs-login-title {
+    color: #0c9abe;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.totvs-splash .totvs-splash-form .totvs-splash-form-button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 60px;
+}
+
+.totvs-splash .totvs-splash-loading {
+    padding-top: 10px;
+    height: 60px;
+}

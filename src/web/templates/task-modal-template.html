@@ -1,0 +1,51 @@
+<div class="totvs-zoom">
+
+    <div class="totvs-zoom-title">
+        {{ 'l-Nova-Tarefa' | translate }} {{ title | translate }}
+    </div>
+
+    <div class="totvs-zoom-body">
+
+        <ul class="totvs-list" style="margin-top:0px">
+            <li class="totvs-list-item">
+                <div class="totvs-list-item-label">
+                    {{ 'l-Nome' | translate }}
+                </div>
+                <div class="totvs-list-item-value">
+                    <input id="name"
+                        type="text"
+                        class="totvs-input"
+                        ng-keypress="nameKeyPress($event)"
+                        ng-model="newTask.name">
+                    </input>
+                </div>
+            </li>
+
+            <li class="totvs-list-item">
+                <div class="totvs-list-item-label">
+                    {{ 'l-Data' | translate }}
+                </div>
+                <div class="totvs-list-item-value">
+                    <input id="data"
+                        type="date"
+                        class="totvs-input"
+                        ng-model="newTask.date">
+                    </input>
+                </div>
+            </li>
+        <ul>
+    </div>
+
+    <div class="totvs-zoom-footer">
+        <button
+            ng-click="cancel()"
+            class="totvs-btn totvs-btn-link totvs-zoom-footer-button">
+            {{ 'l-Cancelar' | translate }}
+        </button>
+        <button
+            ng-click="select()"
+            class="totvs-btn totvs-btn-link totvs-zoom-footer-button {{newTask.name ? '' : 'disabled'}}">
+            {{ 'l-Salvar' | translate }}
+        </button>
+    </div>
+</div>

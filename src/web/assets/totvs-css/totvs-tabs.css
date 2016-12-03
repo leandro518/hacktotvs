@@ -1,0 +1,23 @@
+.totvs-tabs-group {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    height: 48px;
+    box-shadow: inset 0px 1px 0 0 #e4e7e7, inset 0px -1px 0 0 #e4e7e7;
+}
+
+.totvs-tabs-group > .totvs-tab {
+    display: table-cell;
+    text-align: center;
+    height: inherit;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4a5c60
+}
+
+.totvs-tabs-group .totvs-tab.active {
+    color: #ea9b3e;
+    border-bottom: solid 2px #ea9b3e;
+}

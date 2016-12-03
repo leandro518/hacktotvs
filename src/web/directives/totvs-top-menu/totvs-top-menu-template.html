@@ -1,0 +1,31 @@
+<nav class="navbar navbar-fixed-top navbar-totvs">
+    <div class="container-fluid navbar-header-bg">
+        <div class="navbar-header">
+            <!-- FSM botao mais +
+            <button
+                type="button"
+                class="navbar-toggle button-nav button-nav-action"
+                data-toggle="collapse"
+                data-target="#myNavbar"
+                id="btnAdd"
+                ng-click="actionB();"
+                ng-if="!backButton">
+               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+           </button>
+         -->
+
+            <div ng-if="!backButton">
+                <a class="navbar-brand navbar-logo" href="#/opportunities">
+                    <img alt="Brand" src="./assets/img/icon-home.png" width="24px">
+                    <a class="navbar-brand"><b>{{title | translate}}</b></a>
+                </a>
+            </div>
+            <div ng-if="backButton">
+                <a class="navbar-brand navbar-logo" ng-click="backB();">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <a class="navbar-brand"><b>{{title | translate}}</b></a>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,41 @@
+.totvs-spinner-container {
+    align-items: center;
+    text-align: center;
+    color: #26b1c0;
+}
+
+.totvs-spinner img {
+    width: 20px;
+    height: 20px;
+    -webkit-animation: totvs-spinner 1s infinite linear;
+    -moz-animation: totvs-spinner 1s infinite linear;
+    -o-animation: totvs-spinner 1s infinite linear;
+    animation: totvs-spinner 1s infinite linear;
+}
+
+@-moz-keyframes totvs-spinner {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes totvs-spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes totvs-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

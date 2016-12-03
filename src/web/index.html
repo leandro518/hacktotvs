@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon"/>
+        <link rel='shortcut icon' type='image/x-icon' href='./assets/img/favicon.ico' />
+
+        <title>TOTVend+</title>
+
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-navbar.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-card.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-btn.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-list-form.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-zoom.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-spinner.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-notification.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-searchbox.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-tabs.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-list.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-splash.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-forms.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-login.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-tabstrip.css">
+        <link rel="stylesheet" href="assets/totvs-css/totvs-gauge.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower/totvs-twebchannel/totvs-twebchannel.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <script src="libs/jquery-1.9.1.min.js"></script>
+
+        <script src="libs/angular.min.js"></script>
+        <script src="libs/ngMask.min.js"></script>
+
+        <script src="libs/anim-in-out/anim-in-out.js"></script>
+        <link rel="stylesheet" href="libs/anim-in-out/anim-in-out.css">
+
+        <script src="libs/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="libs/angular-translate/angular-translate.min.js"></script>
+        <script src="libs/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+        <script src="libs/angular-animate.min.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="libs/angular-ui-router.min.js"></script>
+        <script src="libs/ui-bootstrap-tpls-1.3.3.min.js"></script>
+
+
+        <!-- Configuration file -->
+        <script src="config.js"></script>
+
+        <!-- App Basics -->
+        <script src="app.module.js"></script>
+        <script src="app.config.js"></script>
+        <script src="app.run.js"></script>
+        <script src="app.controller.js"></script>
+
+        <!-- Services -->
+        <script src="services/device.service.js"></script>
+        <script src="services/database.service.js"></script>
+        <script src="services/task.service.js"></script>
+        <script src="services/scan.service.js"></script>
+        <script src="services/task.modal.js"></script>
+
+        <script src="services/notification.service.js"></script>
+
+        <!-- Directives -->
+        <script src="./directives/totvs-top-menu/totvs-top-menu-module.js"></script>
+        <script src="./directives/totvs-top-menu/totvs-top-menu-directive.js"></script>
+
+        <!-- States controller -->
+        <script src="views/tasks/tasks.controller.js"></script>
+        <script src="views/settings/settings.controller.js"></script>
+        <script src="views/tasks-detail/tasks-detail.controller.js"></script>
+        <script src="views/ranking-detail/ranking-detail.controller.js"></script>
+
+        <!-- Kendo UI -->
+        <script src="libs/telerik.kendoui/js/cultures/kendo.culture.pt.min.js"></script>
+        <script src="libs/telerik.kendoui/js/kendo.all.min.js"></script>
+        <script src="libs/telerik.kendoui/styles/kendo.bootstrap.min.css"></script>
+        <script src="libs/telerik.kendoui/styles/kendo.common-bootstrap.min.css"></script>
+
+
+    </head>
+
+    <body
+        ng-controller="appController as controller"
+        id="hackApp"
+        class="totvs"
+        ng-app="hackApp">
+
+        <totvs-top-menu
+            title="controller.menuTitle"
+            back-button="controller.back_button"
+            back="controller.back"
+            topaction="controller.topaction">
+        </totvs-top-menu>
+
+        <div
+            ui-view="pageContent"
+            id="pageContent"
+            cache-view="false"
+            autoscroll="true"
+            class="content totvs-container anim-in-out"
+            data-anim-in-speed="500"
+            data-anim-out-speed="500"
+            data-anim-sync="true"
+            >&nbsp;
+        </div>
+
+        <div class="totvs-tabstrip">
+            <div class="totvs-tab {{ controller.rootState == 'tasks' ? 'active' : '' }}" ng-click="controller.tabClick('tasks')">
+                <div class="totvs-tab-icon">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </div>
+                <div class="totvs-tab-label">
+                    {{ 'l-Home' | translate }}
+                </div>
+            </div>
+
+            <div class="totvs-tab {{ controller.rootState == 'mensagens' ? 'active' : '' }}"  ng-click="controller.tabClick('mensagens')">
+                <div class="totvs-tab-icon">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                </div>
+                <div class="totvs-tab-label">
+                    {{ 'l-Mensagens' | translate }}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
