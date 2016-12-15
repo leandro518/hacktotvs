@@ -1,3 +1,31 @@
 .totvs-login {
+margin-top: 30%;
+vertical-align: middle;
+margin-bottom: 30%;
+}
 
+.login{
+  margin-top: 20%;
+}
+
+.imagem-login{
+         background-position: center;
+         height: 70px;
+         width: 70px;
+         background-size: 100%;
+         margin-top: 5%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 5%;
+}
+
+.label_login{
+  margin-left: 5%;
+  color: #0c9abe;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+.label_button_login{
+  margin: 5%;
 }

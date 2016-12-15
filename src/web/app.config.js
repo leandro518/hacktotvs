@@ -9,7 +9,7 @@
     function Config($translateProvider, $translateStaticFilesLoaderProvider, $urlRouterProvider, $stateProvider) {
         var config = this;
 
-        $urlRouterProvider.otherwise('/tasks');
+        $urlRouterProvider.otherwise('/login');
 
         $stateProvider
             .state('tasks', {
@@ -17,6 +17,14 @@
                 cache: false,
                 views: {
                     'pageContent@':{templateUrl: 'views/tasks/tasks.html'}
+                }
+            })
+
+            .state('login', {
+                url: '/login',
+                cache: false,
+                views: {
+                    'pageContent@':{templateUrl: 'views/login/login.html'}
                 }
             })
 

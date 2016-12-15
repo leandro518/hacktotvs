@@ -115,7 +115,7 @@
         </div>
 
         <div class="totvs-tabstrip">
-            <div class="totvs-tab {{ controller.rootState == 'tasks' ? 'active' : '' }}" ng-click="controller.tabClick('tasks')">
+            <div class="totvs-tab {{ controller.rootState != 'login' ? 'active' : 'hidden' }}" ng-click="controller.tabClick('tasks')">
                 <div class="totvs-tab-icon">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 </div>
@@ -124,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="totvs-tab {{ controller.rootState == 'mensagens' ? 'active' : '' }}"  ng-click="controller.tabClick('mensagens')">
+            <div class="totvs-tab {{ controller.rootState != 'login' ? 'active' : 'hidden' }}"  ng-click="controller.tabClick('mensagens')">
                 <div class="totvs-tab-icon">
                     <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                 </div>
